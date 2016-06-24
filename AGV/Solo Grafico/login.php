@@ -1,0 +1,37 @@
+<?php session_start(); ?>
+<html>
+	<head>
+		<title>SIMPLY COLORS</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+	</head>
+	<body>
+	<?php include "php/navbar.php"; ?>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+		<h2>Login</h2>
+
+		<form role="form" name="login" action="php/login.php" method="post">
+		  <div class="form-group">
+		    <label for="username">Nombre de usuario o email</label>
+		    <input type="text" class="form-control" id="username" name="username" placeholder="Nombre de usuario">
+		  </div>
+		  <div class="form-group">
+		    <label for="password">Contrase&ntilde;a</label>
+		    <input type="password" class="form-control" id="password" name="password" placeholder="Contrase&ntilde;a">
+		  </div>
+
+		  <button type="submit" class="btn btn-default">Acceder</button>
+		</form>
+</div>
+</div>
+</div>
+		    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
