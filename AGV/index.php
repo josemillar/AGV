@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+session_start();
+?>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
-        // put your code here
-        ?>
-    </body>
+	<head>
+		<title>.: SIMPLY COLORS :.</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	</head>
+	<body>
+	<?php include "php/navbar.php"; ?>
+	<div class="container">
+	<div class="row">
+	<div class="col-md-12">
+	</body>
 </html>
