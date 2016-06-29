@@ -10,20 +10,17 @@ require_once 'conexion.php';
 	<h3>Tabla de productos</h3>
 	<table border="1">
 		<thead>
-			<tr>
-				<th>ID</th>
-				<th>Nombre</th>
-				<th>descripcion</th>
-				<th>categoria</th>
-				<th>precio</th>
-			</tr>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
 		</thead>
 		<tbody>
 HTML;
 		foreach ($rows as $row) {
 			echo <<< HTML
 			<tr>
-				<td>$row[idproducto]</td>
+				<td><img src="./subidas/$row[idproducto].jpg"></td>
 				<td>$row[nombre]</td>
 				<td>$row[descripcion]</td>
 				<td>$row[categoria]</td>
