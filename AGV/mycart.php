@@ -36,7 +36,7 @@ foreach($_SESSION["cart"] as $s):?>
 </form>
 <script>
 	$("#num-<?=$s['idproducto'];?>").change(function(){
-		$.post("./?action=editcart",$("#p-<?=$s['idproducto']?>").serialize()	,function(data){
+		$.post("./php/editcart",$("#p-<?=$s['idproducto']?>").serialize()	,function(data){
 			window.location = window.location;
 
 		});
@@ -76,7 +76,7 @@ $total += $s["q"]*$p->price;
 	</table>
 <br>
 			<?php if(isset($_SESSION["nombre"])):?>
-<form action="index.php?view=checkout" method="post">
+<form action="index.php?php=checkout" method="post">
 <label>Metodo de pago</label>
 <select class="form-control" required name="paymethod_id">
 <?php foreach(PaymethodData::getActives() as $pay):?>
@@ -87,7 +87,7 @@ $total += $s["q"]*$p->price;
 </form>
 <?php endif; ?>
 <br>
-<a href="index.php?action=cleancart" class="btn btn-danger btn-block">Limpar Carrito</a>
+<a href="index.php?php=cleancart" class="btn btn-danger btn-block">Limpar Carrito</a>
 </div>
 </div>
 
