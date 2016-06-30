@@ -23,6 +23,7 @@
 					<li><a href="./CRUD/index.php">CRUD PRODUCTOS</a></li>
 					<li><a href="./CRUD_CLIENTE/index.php">CRUD CLIENTE</a></li>
 					<li><a href="./productos.php">PROD. IMAGENES</a></li>
+					<li><a href="./mycart.php">CARRO DE COMPRA</a></li>
 					
                 <?php else: ?>
                     <li><a href="./ver.php">PRODUCTOS</a></li>
@@ -32,6 +33,7 @@
 					<li><a href="./CRUD/index.php">CRUD PRODUCTOS</a></li>
 					<li><a href="./CRUD_CLIENTE/index.php">CRUD CLIENTE</a></li>
 					<li><a href="./productos.php">PROD. IMAGENES</a></li>
+					<li><a href="./mycart.php">CARRO DE COMPRA</a></li>
                 <?php endif; ?>
             </ul>
 
