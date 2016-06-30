@@ -5,8 +5,8 @@ define("TITULOAPP","Super WebSite");
 ?>
 
 <?php
-define('GMAIL','');
-define('GNAME','');
-define('GUSR','');
-define('GPWD','');
+define('GMAIL','agvcontacto@gmail.com');
+define('GNAME','avgcontacto');
+define('GUSR','avgusuario');
+define('GPWD','avgusuario234');
 ?>
